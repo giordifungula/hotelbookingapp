@@ -16,11 +16,16 @@ function getHotel(){
     console.log(hotelValue);
 }
 function getDays(){
-    
+    // Collect the number of days
+    let numDays = element('daysValue');
+    let inputNumDays = numDays.childNodes[0].value;
+    console.log(numDays);
+    console.log(inputNumDays);
 }
 
 function calculateHotel(){
     // element();
     getHotel();
+    getDays();
     alert('Calculate done');
 }

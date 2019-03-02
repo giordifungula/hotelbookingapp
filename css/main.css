@@ -2,4 +2,9 @@ body {
   background: #00d1b2;
 }
 
+.image {
+  margin: 1em;
+  max-width: 400px;
+}
+
 /*# sourceMappingURL=main.css.map */
