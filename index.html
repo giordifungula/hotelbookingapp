@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title primary">
+        Booking App
+      </h1>
+      <p class="subtitle">
+        Hotel Booking App <strong>Calculator</strong>!
+      </p>
+      <form action="">
+        <label>
+            Hotel Booking App<br>
+            <select id="hotelValue">
+                <option disabled selected value="0">-- Hotel --</option>
+                <option value="1" id="compact">Compact</option>
+                <option value="2" id="standard">Standard</option>
+                <option value="3" id="luxury">Luxury</option>
+            </select>
+        </label><br>
+        <!-- ===== Control ======= -->
+        <h2>How Many Days would you like to stay here</h2>
+        <div class="control">
+            <label class="radio">
+              <input type="radio" name="answer" value="1">
+              1
+            </label>
+            <label class="radio">
+              <input type="radio" name="answer" value="2">
+              2
+            </label>
+            <label class="radio">
+              <input type="radio" name="answer" value="3">
+              3
+            </label>
+            <label class="radio">
+              <input type="radio" name="answer" value="4">
+              4
+            </label>
+            <label class="radio">
+              <input type="radio" name="answer" value="5">
+              5
+            </label>
+          </div>
+          <button type="button" id="calculate" onclick="calculateHotel()">Calculate!</button>
+
+      </form>
+    </div>
+  </section>
+  </body>
+  <script src="app.js"></script>
+</html>
