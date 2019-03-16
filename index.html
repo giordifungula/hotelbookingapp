@@ -26,38 +26,41 @@
                 <option value="2" id="standard">Standard</option>
                 <option value="3" id="luxury">Luxury</option>
             </select>
+            <a class="button is-link" onclick="calculateHotel()">Save</a>
         </label><br>
         <!-- ===== Control ======= -->
         <h2>How Many Days would you like to stay here</h2>
         <div class="control" id="daysValue">
             <label class="radio">
-              <input type="radio" name="answer" value="1">
+              <input type="radio" name="answer" value="1" onclick="getDays(this)">
               1
             </label>
             <label class="radio">
-              <input type="radio" name="answer" value="2">
+              <input type="radio" name="answer" value="2" onclick="getDays(this)">
               2
             </label>
             <label class="radio">
-              <input type="radio" name="answer" value="3">
+              <input type="radio" name="answer" value="3" onclick="getDays(this)">
               3
             </label>
             <label class="radio">
-              <input type="radio" name="answer" value="4">
+              <input type="radio" name="answer" value="4" onclick="getDays(this)">
               4
             </label>
             <label class="radio">
-              <input type="radio" name="answer" value="5">
+              <input type="radio" name="answer" value="5" onclick="getDays(this)">
               5
             </label>
           </div>
-          <button type="button" id="calculate" onclick="calculateHotel()">Calculate!</button>
-
+          <button class="button is-success"type="button" id="calculate" onclick="calculateHotel()">Calculate!</button>
       </form>
     </div>
     <section class="image">
       <img src="https://images.trvl-media.com/hotels/21000000/20580000/20573700/20573686/7c29f05a_z.jpg" alt="">
     </section>
+    <div class="price" id="total">
+
+    </div>
   </section>
   </body>
   <script src="app.js"></script>
